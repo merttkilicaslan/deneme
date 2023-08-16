@@ -1,4 +1,4 @@
-FROM node:18.17.1
+FROM node:14
 
 WORKDIR /usr/src/app
 
@@ -6,7 +6,7 @@ COPY package*.json ./
 
 COPY . .
 
-RUN npm run build
+RUN npm run
 
 EXPOSE 3000
 

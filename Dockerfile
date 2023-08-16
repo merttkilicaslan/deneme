@@ -6,7 +6,9 @@ COPY package*.json ./
 
 COPY . .
 
-RUN npm run
+RUN pwd && ls -la
+
+RUN npm run build
 
 EXPOSE 3000
 

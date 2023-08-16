@@ -6,8 +6,6 @@ COPY package*.json ./
 
 COPY . .
 
-RUN npm install react-scripts
-
 RUN npm run build
 
 EXPOSE 3000
